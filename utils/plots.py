@@ -186,7 +186,7 @@ class Annotator:
 
                 arr_color = [alt_color * (rotation_factor * 2) for alt_color in color]
                 end_point = (end_xVal, end_yVal)
-                cv2.arrowedLine(self.im_cv2, start_point, end_point, arr_color, thickness=self.lw)
+                cv2.arrowedLine(self.im_cv2, start_point, end_point, 0.5, thickness=self.lw)
   
                 x_label, y_label = int((xmax + xmin)/2), int((ymax + ymin)/2)
                 w, h = cv2.getTextSize(label, 0, fontScale=self.lw / 6, thickness=tf)[0]  # text width, height

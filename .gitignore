@@ -1,0 +1,5 @@
+venv
+**/*.pyc
+runs
+weights/xlweights/weights.zip
+weights/xlweights/yolov5xOysters.pt
